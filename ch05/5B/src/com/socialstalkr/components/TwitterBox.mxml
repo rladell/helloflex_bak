@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml"
-  width="300" height="100%" backgroundColor="#FFFFFF">
+  width="380" height="100%" backgroundColor="#FFFFFF" xmlns:components="com.socialstalkr.components.*">
 <mx:Metadata>
   [Event("locateTweet")]
 </mx:Metadata>
@@ -114,5 +114,6 @@ change="locateTweet(XML(selectedUserTweetList.selectedItem))"
           variableRowHeight="true"/>
       </mx:Panel>
     </mx:VBox>
+    <components:MapSearchBox/>
   </mx:ViewStack>
 </mx:VBox>

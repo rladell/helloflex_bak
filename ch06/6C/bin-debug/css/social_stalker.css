@@ -26,41 +26,64 @@ ApplicationControlBar{
   fillColors:#CCCCCC,#CCCCCC;
   fillAlpha: 1,1;
   background-alpha:1;
+  fillColors:#000000,#FFFFFF;
+  backgroundColor:#FFCC66;
+  backgroundColor:#c8c8c8;
   */
-  backgroundColor:#DDDDDD;
+  borderStyle: solid;
+  backgroundColor:#c8c8c8;
   dropShadowEnabled:false;
 }
 
 Button{
    highlightAlphas: 0, 0;
    fillAlphas: 1, 1, 1, 1;
-   fillColors: #ff6600, #ff6600, #ff9900, #ff9900;
-   color: #ffffff;
+   fillColors: #fed81c, #fff9c1, #ff9900, #ff9900;
+   color: #994800;
    textRollOverColor: #ffffff;
-   textSelectedColor: #ff6600;
-   borderColor: #ffffff;
+   textSelectedColor: #994800;
+   borderColor: #ecc101;
    themeColor: #ffcc00;
 }
 
 List{
   /*
   alternatingItemColors:#D6D3AE, #786937;
+  selectedFillColors:#FFCC33, #FFCC33;
+  rollOverColor:#ffed73;
   */
+  alternatingItemColors:#e0e9f2, #d3e1f0;
+  selectionColor:#fff3a3;
+  rollOverColor:#ffffff;
   borderStyle:none;
-  paddingTop:0;
-  paddingBottom:0;
-  paddingLeft:0;
-  paddingRight:0;
+  paddingTop:2;
+  paddingBottom:2;
+  paddingLeft:5;
+  paddingRight:5;
 }
 
 Panel{
   cornerRadius:8;
-  dropShadowEnabled:false;
+  dropShadowEnabled:true;
+  shadowDirection:center;
+  shadowDistance:0;
   highlightAlphas:0,0;
-  depth-colors
   borderAlpha:1;
-  borderColor:#a5aeb7;
+  borderColor:#d2d9e3;
   roundedBottomCorners:true;
 	color: #333333;
-	backgroundColor: #d2d9e3;
+	backgroundColor: #e0e9f2;
+}
+
+Panel.sidePanel{
+  cornerRadius:0;
+  dropShadowEnabled:true;
+  shadowDirection:center;
+  shadowDistance:0;
+  highlightAlphas:0,0;
+  borderAlpha:1;
+  borderColor:#d2d9e3;
+  roundedBottomCorners:true;
+  color: #4c6e93;
+  backgroundColor: #e0e9f2;
 }

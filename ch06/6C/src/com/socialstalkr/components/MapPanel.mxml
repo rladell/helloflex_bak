@@ -36,8 +36,43 @@
     mapContainer.addEventListener(ResizeEvent.RESIZE,
       onMapResize);
     mapContainer.addChild(_map);
+    
+    /*
+    var filterArray:Array = new Array();
+    var greyscale:ColorMatrixFilter = new ColorMatrixFilter([0.3086, 0.6094, 0.0820, 0, 0,
+                                                          0.3086, 0.6094, 0.0820, 0, -40,
+                                                          0.3086, 0.6094, 0.0820, 0, 0,
+                                                          0, 0, 0, 1, 0]);
+    var invert:ColorMatrixFilter = new ColorMatrixFilter([-1, 0, 0, 0, 255,
+                                                          0, -1, 0, 0, 255,
+                                                          0, 0, -1, 0, 255,
+                                                          0, 0, 0, 1, 0]);                                                    
+    filterArray.push(greyscale);
+    filterArray.push(invert);                                                     
+    mapContainer.filters = filterArray;
+    */
+    
   }
-
+  
+  public function setNightimeMapMode():void{
+    var filterArray:Array = new Array();
+    var greyscale:ColorMatrixFilter = new ColorMatrixFilter([0.3086, 0.6094, 0.0820, 0, 0,
+                                                          0.3086, 0.6094, 0.0820, 0, -40,
+                                                          0.3086, 0.6094, 0.0820, 0, 0,
+                                                          0, 0, 0, 1, 0]);
+    var invert:ColorMatrixFilter = new ColorMatrixFilter([-1, 0, 0, 0, 130,
+                                                          0, -1, 0, 0, 190,
+                                                          0, 0, -1, 0, 130,
+                                                          0, 0, 0, 1, 0]);                                                    
+    filterArray.push(greyscale);
+    filterArray.push(invert);                                                     
+    mapContainer.filters = filterArray;
+  }
+  
+  public function setDaytimeMapMode():void{
+    mapContainer.filters = new Array();
+  }
+  
   public function locateTweet(tweet:XML):void {
     _map.markerManager.removeAllMarkers();
     var text:String = tweet.text;

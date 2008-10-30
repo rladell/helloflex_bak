@@ -13,5 +13,8 @@
 <application path="Sandbox.mxml"/>
 </applications>
 <modules/>
-<buildCSSFiles/>
+<buildCSSFiles>
+<buildCSSFileEntry destPath="bin-debug" sourcePath="src/css/social_stalker_night.css"/>
+<buildCSSFileEntry destPath="bin-debug" sourcePath="src/css/social_stalker.css"/>
+</buildCSSFiles>
 </actionScriptProperties>

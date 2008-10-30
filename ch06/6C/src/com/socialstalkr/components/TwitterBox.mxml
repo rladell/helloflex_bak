@@ -46,7 +46,7 @@
 
   <mx:Panel width="100%"
 title="{_model.twitterUser.name} ({_model.twitterUser.screen_name})"
-    styleName="fancyPanel">
+    styleName="sidePanel">
     <mx:Image width="48" height="48"
       source="{_model.twitterUser.profile_image_url}"/>
     <mx:List id="selectedUserTweetList"
@@ -62,7 +62,7 @@ title="{_model.twitterUser.name} ({_model.twitterUser.screen_name})"
 
   <mx:Panel width="100%" height="250"
     title="{_model.twitterUser.name} is Following"
-    >
+    styleName="sidePanel">
     <mx:List id="usersList" width="100%" height="100%"
       wordWrap="true"
       dataProvider="{_model.twitterUserFriends}"
@@ -73,7 +73,7 @@ itemRenderer="com.socialstalkr.components.UserListItemRenderer"/>
   <mx:Panel visible="{_model.selectedFriend != null}"
     width="100%" height="100%"
     title="{_model.selectedFriend.name}'s Tweets"
-    >
+    styleName="sidePanel">
     <mx:List 
       id="selectedFriendTweetList"
       width="100%" height="100%"

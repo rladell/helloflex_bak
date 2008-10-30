@@ -1,0 +1,139 @@
+/*
+FF711E -orange
+F9E4B3 -beige
+A68C74 -lgt brown
+4F3B3F -lgt purple
+2E2321 - drk purple
+
+*/
+
+
+/* CSS file */
+global{
+  color:#DDDDDD;
+}
+
+Application{
+  backgroundGradientColors:#222222,#333333;
+  paddingBottom:5;
+  paddingTop:5;
+  paddingLeft:5;
+  paddingRight:5;
+}
+
+ApplicationControlBar{
+  /*
+  fillColors:#CCCCCC,#CCCCCC;
+  fillAlpha: 1,1;
+  background-alpha:1;
+  fillColors:#000000,#FFFFFF;
+  backgroundColor:#FFCC66;
+  backgroundColor:#c8c8c8;
+  */
+  borderStyle: solid;
+  borderColor:#444444;
+  
+  /*
+  highlightAlphas: 0.4, 0.4;
+  fillAlphas: 0.2, 0.2;
+  fillColors: #FFFFFF, #fff9c1;
+  */
+  backgroundColor:#333333;
+  dropShadowEnabled:false;
+}
+
+Button{
+   highlightAlphas: 0, 0;
+   fillAlphas: 1, 1, 0, 0;
+   fillColors: #222222, #222222, #202020, #222222;
+   color: #DDDDDD;
+   fontWeight:normal;
+   textRollOverColor: #ffffff;
+   textSelectedColor: #333333;
+   borderColor: #CCCCCC;
+   themeColor:#BBBBBB;
+   /*
+   borderRollOverColor: #FFFFFF;
+   */
+   rollOverColor:#ffffff;
+   selectionColor:#DDDDDD;
+
+   /*
+   The default values of the rollOverColor and selectionColor styles are based on the themeColor value.
+   themeColor: #FFFFFF;
+   */
+}
+
+VScrollBar{
+  /*
+  fillColors: #333333, #222222;
+  
+  */
+  fillAlphas: 1,1,1,1;
+  fillColors: #222222, #222222, #333333, #333333;
+  trackColors: #111111, #222222;
+  borderColor: #444444;
+  selectionColor:#333333;
+  themeColor:#555555;
+  thumbOffset: 0;
+  cornerRadius: 0;
+  /*
+  
+  fillColors: #222222, #222222, #202020, #222222;
+  themeColor:#999999;
+  rollOverColor:#999999;
+  */
+}
+
+List{
+  /*
+  alternatingItemColors:#D6D3AE, #786937;
+  selectedFillColors:#FFCC33, #FFCC33;
+  rollOverColor:#ffed73;
+  */
+  color:#AAAAAA;
+  textRollOverColor:#AAAAAA;
+  textSelectedColor:#AAAAAA;
+  alternatingItemColors:#222222, #191919;
+  selectionColor:#163e16;
+  rollOverColor:#002800;
+  borderStyle:none;
+  paddingTop:2;
+  paddingBottom:2;
+  paddingLeft:5;
+  paddingRight:5;
+}
+
+TextInput{
+  color:#333333;  
+}
+
+Panel{
+  cornerRadius:8;
+  dropShadowEnabled:true;
+  shadowDirection:center;
+  shadowDistance:0;
+  highlightAlphas:0,0;
+  borderAlpha:1;
+  borderColor:#000000;
+  roundedBottomCorners:true;
+	color: #999999;
+	backgroundColor: #000000;
+}
+
+Panel.sidePanel{
+  cornerRadius:0;
+  dropShadowEnabled:true;
+  shadowDirection:center;
+  shadowDistance:0;
+  highlightAlphas:0,0;
+  borderStyle: solid;
+  borderColor:#444444;
+  borderAlpha:1;
+  /*
+  borderColor:#111111;
+  */
+  roundedBottomCorners:true;
+  color: #999999;
+  backgroundColor: #111111;
+}
